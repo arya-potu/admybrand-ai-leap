@@ -150,9 +150,13 @@ export function PricingSection() {
 
                   {/* CTA Button */}
                   <AuroraButton 
-                    variant={plan.popular ? "aurora" : "glass"} 
+                    variant={plan.popular ? "aurora" : "ghost"} 
                     size="lg" 
-                    className="w-full"
+                    className={`w-full font-bold shadow-lg ${
+                      plan.popular 
+                        ? "bg-primary hover:bg-primary-hover text-white" 
+                        : "bg-gray-900 hover:bg-gray-800 text-white border-none"
+                    }`}
                   >
                     {plan.popular ? "Start Free Trial" : "Get Started"}
                   </AuroraButton>

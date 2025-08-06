@@ -111,8 +111,8 @@ export function FeaturesSection() {
                 className="group hover:scale-105 transition-all duration-500 h-full"
               >
                 <div className="flex flex-col h-full">
-                  <div className={`w-12 h-12 rounded-xl bg-white/80 border border-gray-200 flex items-center justify-center mb-4 group-hover:shadow-xl group-hover:bg-white transition-all duration-300`}>
-                    <feature.icon className={`w-6 h-6 ${feature.color}`} />
+                  <div className={`w-12 h-12 rounded-xl bg-white border-2 border-primary/20 flex items-center justify-center mb-4 group-hover:shadow-xl group-hover:bg-primary/5 group-hover:border-primary/40 transition-all duration-300`}>
+                    <feature.icon className={`w-7 h-7 ${feature.color} opacity-100`} />
                   </div>
                   
                   <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">

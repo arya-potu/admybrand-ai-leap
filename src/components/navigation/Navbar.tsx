@@ -59,7 +59,11 @@ export function Navbar() {
                   <button
                     key={item.name}
                     onClick={() => scrollToSection(item.href)}
-                    className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
+                    className={`${
+                      isScrolled 
+                        ? "text-white hover:text-primary" 
+                        : "text-gray-900 hover:text-primary"
+                    } transition-colors text-sm font-bold`}
                   >
                     {item.name}
                   </button>
@@ -70,7 +74,11 @@ export function Navbar() {
             <div className="hidden md:flex items-center gap-4">
               <CosmicModal>
                 <CosmicModalTrigger asChild>
-                  <button className="text-gray-700 hover:text-primary transition-colors text-sm font-medium">
+                  <button className={`${
+                    isScrolled 
+                      ? "text-white hover:text-primary" 
+                      : "text-gray-900 hover:text-primary"
+                  } transition-colors text-sm font-bold`}>
                     Login
                   </button>
                 </CosmicModalTrigger>
@@ -88,7 +96,7 @@ export function Navbar() {
                 </CosmicModalContent>
               </CosmicModal>
               
-              <AuroraButton variant="aurora" size="sm" className="bg-primary hover:bg-primary-hover text-white font-semibold shadow-lg">
+              <AuroraButton variant="aurora" size="sm" className="bg-primary hover:bg-primary-hover text-white font-bold shadow-xl transform hover:scale-105 transition-all">
                 Start Free Trial
               </AuroraButton>
             </div>
@@ -116,16 +124,16 @@ export function Navbar() {
                   <button
                     key={item.name}
                     onClick={() => scrollToSection(item.href)}
-                    className="text-left text-gray-700 hover:text-primary transition-colors text-sm font-medium py-2"
+                    className="text-left text-white hover:text-primary transition-colors text-sm font-bold py-2"
                   >
                     {item.name}
                   </button>
                 ))}
                 <div className="pt-4 border-t border-gray-800 space-y-3">
-                  <button className="text-left text-gray-700 hover:text-primary transition-colors text-sm font-medium">
+                  <button className="text-left text-white hover:text-primary transition-colors text-sm font-bold">
                     Login
                   </button>
-                  <AuroraButton variant="aurora" size="sm" className="w-full bg-primary hover:bg-primary-hover text-white font-semibold shadow-lg">
+                  <AuroraButton variant="aurora" size="sm" className="w-full bg-primary hover:bg-primary-hover text-white font-bold shadow-xl">
                     Start Free Trial
                   </AuroraButton>
                 </div>

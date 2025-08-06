@@ -68,11 +68,11 @@ export function FooterSection() {
               <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">
                 Stay ahead with
                 <br />
-                <AuroraText variant="shimmer" size="4xl" as="span" className="font-bold">
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-bold text-4xl md:text-5xl">
                   AI Marketing Insights
-                </AuroraText>
+                </span>
               </h3>
-              <p className="text-gray-200 mb-8 max-w-2xl mx-auto">
+              <p className="text-gray-100 mb-8 max-w-2xl mx-auto font-medium">
                 Get the latest trends, tips, and strategies delivered to your inbox. 
                 Join 50,000+ marketers who trust our insights.
               </p>
@@ -111,25 +111,25 @@ export function FooterSection() {
                   </AuroraText>
                 </div>
                 
-                <p className="text-gray-200 mb-6 max-w-sm">
+                <p className="text-gray-100 mb-6 max-w-sm font-medium">
                   Revolutionizing marketing with AI-powered solutions that scale 
                   your brand to new heights. Join the future of marketing today.
                 </p>
                 
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3 text-sm text-gray-200">
-                    <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                    <span>San Francisco, CA 94105</span>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 text-sm text-gray-100 font-medium">
+                      <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>San Francisco, CA 94105</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm text-gray-100 font-medium">
+                      <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm text-gray-100 font-medium">
+                      <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>hello@admybrand.ai</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3 text-sm text-gray-200">
-                    <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                    <span>+1 (555) 123-4567</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-sm text-gray-200">
-                    <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                    <span>hello@admybrand.ai</span>
-                  </div>
-                </div>
               </ScrollReveal>
             </div>
 

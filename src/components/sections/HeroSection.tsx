@@ -8,9 +8,9 @@ export function HeroSection() {
   return (
     <section className="theme-hero relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: 'var(--section-bg)' }}>
       {/* Subtle Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-blue-500/20 to-blue-600/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-blue-400/15 to-blue-500/5 rounded-full blur-3xl" />
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-blue-500/30 to-blue-600/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-blue-400/25 to-blue-500/15 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
