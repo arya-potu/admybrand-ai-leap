@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base Theme Colors - Bold & Realistic */
+    --background: 0 0% 100%;
+    --foreground: 216 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 216 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 15% 15%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 210 100% 45%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 216 15% 15%;
+    --secondary-hover: 220 14% 91%;
+    --accent: 24 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 25% 25%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 210 100% 50%;
+    --radius: 0.5rem;
+    
+    /* Enhanced Shadows for Better Depth */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 8px 10px -6px hsl(0 0% 0% / 0.1);
+    --shadow-colored: 0 8px 30px hsl(210 100% 50% / 0.15);
+    
+    /* Color Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%), hsl(220 100% 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(24 100% 50%), hsl(35 100% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(220 60% 98%) 100%);
+    
+    /* Transitions */
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  /* Hero Section - Bold & Vibrant */
+  .theme-hero {
+    --section-bg: var(--gradient-hero);
+    --section-primary: 216 15% 15%;
+    --section-secondary: 210 100% 50%;
+    --section-accent: 24 100% 50%;
+    --section-text: 216 15% 15%;
+    --section-shadow: var(--shadow-colored);
+  }
+
+  /* Features Section - Light Gray Professional */
+  .theme-features {
+    --section-bg: hsl(0 0% 100%);
+    --section-primary: 210 85% 50%;
+    --section-secondary: 215 20% 25%;
+    --section-accent: 210 85% 45%;
+    --section-text: 215 25% 27%;
+    --section-shadow: 0 4px 20px hsl(210 40% 30% / 0.08);
+  }
+
+  /* Pricing Section - Accent Background */
+  .theme-pricing {
+    --section-bg: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(220 20% 96%) 100%);
+    --section-primary: 210 85% 50%;
+    --section-secondary: 215 20% 25%;
+    --section-accent: 210 85% 45%;
+    --section-text: 215 25% 27%;
+    --section-shadow: 0 6px 25px hsl(210 40% 30% / 0.12);
+  }
+
+  /* Testimonials Section - Pure White */
+  .theme-testimonials {
+    --section-bg: hsl(0 0% 100%);
+    --section-primary: 210 85% 50%;
+    --section-secondary: 215 20% 25%;
+    --section-accent: 210 85% 45%;
+    --section-text: 215 25% 27%;
+    --section-shadow: 0 4px 20px hsl(210 40% 30% / 0.08);
+  }
+
+  /* FAQ Section - Light Background */
+  .theme-faq {
+    --section-bg: linear-gradient(120deg, hsl(210 40% 98%) 0%, hsl(220 20% 96%) 100%);
+    --section-primary: 210 85% 50%;
+    --section-secondary: 215 20% 25%;
+    --section-accent: 210 85% 45%;
+    --section-text: 215 25% 27%;
+    --section-shadow: 0 6px 25px hsl(210 40% 30% / 0.1);
+  }
+
+  /* Contact Section - Clean White */
+  .theme-contact {
+    --section-bg: hsl(0 0% 100%);
+    --section-primary: 210 85% 50%;
+    --section-secondary: 215 20% 25%;
+    --section-accent: 210 85% 45%;
+    --section-text: 215 25% 27%;
+    --section-shadow: 0 4px 20px hsl(210 40% 30% / 0.08);
+  }
+
+  /* Footer Section - Dark Professional */
+  .theme-footer {
+    --section-bg: linear-gradient(180deg, hsl(215 25% 27%) 0%, hsl(215 25% 20%) 100%);
+    --section-primary: 0 0% 100%;
+    --section-secondary: 210 15% 85%;
+    --section-accent: 210 40% 90%;
+    --section-text: 210 15% 85%;
+    --section-shadow: 0 -4px 20px hsl(215 25% 15% / 0.2);
+  }
+
+  .dark {
+    --background: 222 15% 23%;
+    --foreground: 0 0% 100%;
+    --card: 215 25% 27%;
+    --card-foreground: 0 0% 100%;
+    --popover: 215 25% 27%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 210 85% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 25% 35%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 215 25% 35%;
+    --muted-foreground: 215 15% 75%;
+    --accent: 215 25% 35%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 25% 35%;
+    --input: 215 25% 35%;
+    --ring: 210 85% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
